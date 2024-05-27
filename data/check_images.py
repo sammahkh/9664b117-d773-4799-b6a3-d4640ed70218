@@ -42,7 +42,7 @@ from print_results import print_results
 def main():
     # TODO 0: Measures total program runtime by collecting start time
     start_time = time()
-    
+
     # TODO 1: Define get_input_args function within the file get_input_args.py
     # This function retrieves 3 Command Line Arugments from user as input from
     # the user running the program from a terminal window. This function returns
@@ -53,7 +53,7 @@ def main():
     # Function that checks command line arguments using in_arg  
     check_command_line_arguments(in_arg)
 
-    
+
     # TODO 2: Define get_pet_labels function within the file get_pet_labels.py
     # Once the get_pet_labels function has been defined replace 'None' 
     # in the function call with in_arg.dir  Once you have done the replacements
