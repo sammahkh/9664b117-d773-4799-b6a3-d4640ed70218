@@ -1,0 +1,51 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:              black_bear_01.jpg  label:                 black bear
+ 2 key:                      dog02.jpg  label:                           
+ 3 key:              Coffee_mug_01.jpg  label:                 coffee mug
+ 4 key:                      dog01.jpg  label:                           
+
+     MATCH:
+
+             black_bear_01.jpg: 
+Real:                 black bear   Classifier: american black bear, black bear, ursus americanus, euarctos americanus
+
+                     dog02.jpg: 
+Real:                              Classifier:                     rottweiler
+
+                     dog01.jpg: 
+Real:                              Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+ NOT A MATCH:
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                       espresso
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+     MATCH:
+
+             black_bear_01.jpg: 
+Real:                 black bear   Classifier: american black bear, black bear, ursus americanus, euarctos americanus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                     dog02.jpg: 
+Real:                              Classifier:                     rottweiler  
+PetLabelDog: 0  ClassLabelDog: 1
+
+                     dog01.jpg: 
+Real:                              Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 0  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                       espresso  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
