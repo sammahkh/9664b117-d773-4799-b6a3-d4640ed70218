@@ -327,37 +327,11 @@ pct_correct_breed   : 90.0
 pct_correct_notdogs : 90.0
 
 INCORRECT Dog/NOT Dog Assignments:
-Pet Image Label is NOT a Dog - Classified as a DOG
-Pet Label:                      skunk
-Classifier Label:     skunk, polecat, wood pussy
-Pet Image Label is NOT a Dog - Classified as a DOG
-Pet Label:                     rabbit
-Classifier Label: wood rabbit, cottontail, cottontail rabbit, rabbit
-Pet Image Label is NOT a Dog - Classified as a DOG
-Pet Label:                        cat
-Classifier Label:              egyptian cat, cat
-Pet Image Label is a Dog - Classified as NOT-A-DOG
-Pet Label:           golden retriever
-Classifier Label:                       leonberg
-Pet Image Label is NOT a Dog - Classified as a DOG
-Pet Label:               fox squirrel
-Classifier Label: fox squirrel, eastern fox squirrel, sciurus niger
-Pet Image Label is a Dog - Classified as NOT-A-DOG
-Pet Label:                     beagle
-Classifier Label:  walker hound, walker foxhound
-Pet Image Label is NOT a Dog - Classified as a DOG
-Pet Label:                 polar bear
-Classifier Label: ice bear, polar bear, ursus maritimus, thalarctos maritimus
-Pet Image Label is a Dog - Classified as NOT-A-DOG
-Pet Label:             great pyrenees
-Classifier Label:                         kuvasz
-Pet Image Label is NOT a Dog - Classified as a DOG
-Pet Label:                        cat
-Classifier Label:          tabby, tabby cat, cat
+Real:                        cat   Classifier:   norwegian elkhound, elkhound
 
 INCORRECT Dog Breed Assignment:
 Real:           golden retriever   Classifier:                       leonberg
 Real:                     beagle   Classifier:  walker hound, walker foxhound
 Real:             great pyrenees   Classifier:                         kuvasz
 
-** Total Elapsed Runtime: 0:0:20
+** Total Elapsed Runtime: 0:0:26

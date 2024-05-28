@@ -78,16 +78,13 @@ def print_results(results_dic, results_stats_dic, model,
           != results_stats_dic['n_images'] ) 
        ):
         print("\nINCORRECT Dog/NOT Dog Assignments:")
+        for value in results_dic.values():
+          if ( (value[3] == 1 and value[4] == 0) or
+                (value[3] == 0 and value[4] == 1) ):
+               print("Real: {:>26}   Classifier: {:>30}".format(value[0],
+                                                        value[1]))
 
-    for value in results_dic.values():
-      if sum(value[3:]) == 2 and value[2] == 0:
-        print("Pet Image Label is a Dog - Classified as NOT-A-DOG")
-        print("Pet Label: {:>26}".format(value[0]))
-        print("Classifier Label: {:>30}".format(value[1]))
-      elif sum(value[3:]) == 0 and value[2] == 1:
-        print("Pet Image Label is NOT a Dog - Classified as a DOG")
-        print("Pet Label: {:>26}".format(value[0]))
-        print("Classifier Label: {:>30}".format(value[1]))
+          
 
 
     if (print_incorrect_breed and 
