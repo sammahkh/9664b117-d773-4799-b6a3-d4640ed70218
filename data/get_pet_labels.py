@@ -43,11 +43,11 @@ def get_pet_labels(image_dir):
     in_files = listdir(image_dir)
     results_dic = dict()
 
-    for idx in range(0, len(in_files), 1):
+    for filename in in_files:
        
-      if in_files[idx][0] != ".":
+      if filename[0] != ".":
            
-           pet_label = ""
+           
           
 
            # TODO: 2a. BELOW REPLACE pass with CODE that will process each 
@@ -60,7 +60,7 @@ def get_pet_labels(image_dir):
            
            
 
-           pet_image = in_files[idx]
+           pet_image = filename
            ## Sets string to lower case letters
            low_pet_image = pet_image.lower()
            ## Splits lower case string by _ to break into words 
@@ -69,24 +69,19 @@ def get_pet_labels(image_dir):
            ## Loops to check if word in pet name is only
            ## alphabetic characters - if true append word
            ## to pet_label separated by trailing space 
-           for word in word_list_pet_image:
-             if word.isalpha():
-               pet_label += word + " "
-
-           ## Strip off starting/trailing whitespace characters 
-           pet_label = pet_label.strip()
+           pet_label=" ".join([word.strip() for word in word_list_pet_image if word.isalpha()])
 
           
 
            # If filename doesn't already exist in dictionary add it and it's
            # pet label - otherwise print an error message because indicates 
            # duplicate files (filenames)
-           if in_files[idx] not in results_dic:
-            results_dic[in_files[idx]] = [pet_label]
+           if filename not in results_dic:
+            results_dic[filename] = [pet_label]
               
            else:
               print("** Warning: Duplicate files exist in directory:", 
-                    in_files[idx])
+                    filename)
 
    # TODO 2b. Replace None with the results_dic dictionary that you created
    # with this function
